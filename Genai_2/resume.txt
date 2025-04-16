@@ -1,0 +1,23 @@
+John Doe
+Software Engineer | Data Scientist
+john.doe@email.com | (123) 456-7890 | linkedin.com/in/johndoe
+
+SUMMARY:
+Machine Learning Engineer with 3+ years of experience in Python, TensorFlow, and cloud technologies. Specialized in NLP and computer vision applications.
+
+TECHNICAL SKILLS:
+- Programming: Python, Java, C++
+
+
+EXPERIENCE:
+Senior Data Scientist, ABC Tech (2021-Present)
+- Developed ML models for NLP applications
+
+
+EDUCATION:
+MS in Computer Science, XYZ University (2020)
+BS in Engineering, ABC College (2018)
+
+PROJECTS:
+- Built a question-answering system using BERT
+- Developed computer vision model for object detection
