@@ -1,29 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generated Interview Question</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mock Interview - Results</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      margin-bottom: 1rem;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .field-label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .question-box {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Generated Personalized Interview Question</h1>
-
+  <div class="container">
+    <h1>🎤 Mock Interview Result</h1>
     <p><strong>Category:</strong> {{ results['category'] }}</p>
 
-    <p><strong>Retrieved Example Question:</strong><br>
-    {{ results['retrieved_question']['Cleaned_Question'] }}</p>
+    <div class="question-box">
+      <p><strong>Retrieved Example Question:</strong><br>
+        {{ results['retrieved_question']['Cleaned_Question'] }}</p>
+      <p><strong>Answer:</strong><br>
+        {{ results['retrieved_question']['Cleaned_Answer'] }}</p>
+    </div>
 
-    <p><strong>Generated Question (for candidate):</strong><br>
-    {{ results['generated_question'] }}</p>
+    <div class="question-box">
+      <p><strong>Generated Question (for candidate):</strong><br>
+        {{ results['generated_question'] }}</p>
+    </div>
 
-    <h2>Compare Answer</h2>
+    <h2>Compare Your Answer</h2>
+
     <form action="/compare" method="POST">
-        <label for="user_answer">Your Answer:</label><br>
-        <textarea id="user_answer" name="user_answer" rows="4" cols="50"></textarea><br><br>
+      <label class="field-label" for="user_answer">Your Answer:</label><br>
+      <textarea id="user_answer" name="user_answer" rows="6"></textarea>
 
-        <input type="hidden" name="model_answer" value="{{ results['generated_question'] }}">
+      <input type="hidden" name="model_answer" value="{{ results['retrieved_question']['Cleaned_Answer'] }}">
 
-        <input type="submit" value="Compare">
+      <div>
+        <button type="button" onclick="startDictation()">🎙 Speak Your Answer</button>
+        <button type="submit">Compare Answer</button>
+      </div>
     </form>
+  </div>
+
+  <script>
+    function startDictation() {
+      if ('webkitSpeechRecognition' in window) {
+        const recognition = new webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'en-US';
+
+        recognition.onstart = function() {
+          console.log("Voice recognition started...");
+        };
+
+        recognition.onresult = function(event) {
+          const transcript = event.results[0][0].transcript;
+          document.getElementById('user_answer').value = transcript;
+        };
+
+        recognition.onerror = function(event) {
+          alert('Speech recognition error: ' + event.error);
+        };
+
+        recognition.start();
+      } else {
+        alert("Sorry, your browser doesn't support speech recognition.");
+      }
+    }
+  </script>
 </body>
 </html>

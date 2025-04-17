@@ -9,5 +9,5 @@
     "Cleaned_Question": "role data engineer devops team",
     "Cleaned_Answer": "answer data engineer design build data pipeline ensuring data collected processed made available analysis supporting datadriven decisionmaking devops"
   },
-  "generated_question": "As a data engineer, can you describe your experience working with a DevOps team, specifically in terms of designing, developing, and optimizing database queries to support data-driven applications? How have you used tools such as git and github to streamline your work?"
+  "generated_question": "Can you explain how you would approach the design of a scalable and secure data pipeline for a large-scale relational database, taking into consideration the needs of a DevOps team, the use of git and github for version control, and the use of machine learning (ml) techniques for data classification?"
 }
