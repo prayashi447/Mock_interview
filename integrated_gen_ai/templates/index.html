@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Interview Question Generator</title>
+</head>
+<body>
+    <h1>Upload Job Description and Resume</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="job_desc">Job Description:</label><br>
+        <textarea id="job_desc" name="job_desc" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="resume">Resume (Text format or PDF):</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.txt"><br><br>
+        
+        <input type="submit" value="Generate Questions">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+John Doe
+Email: john.doe@example.com
+Phone: (123) 456-7890
+
+Professional Summary:
+Data Scientist with 3+ years of experience in building machine learning models, analyzing data, and delivering actionable insights. Proficient in Python, SQL, and data visualization tools like Tableau and Power BI.
+
+Skills:
+- Programming Languages: Python, R, SQL
+- Machine Learning: Scikit-learn, TensorFlow, XGBoost
+- Data Visualization: Tableau, Matplotlib, Seaborn
+- Databases: PostgreSQL, MySQL
+- Tools: Git, Jupyter, Docker
+
+Work Experience:
+Data Scientist – TechCorp (2021–Present)
+- Developed predictive models to improve customer retention.
+- Automated data pipelines using Python and SQL.
+- Presented insights using Tableau dashboards.
+
+Education:
+M.S. in Data Science, University of XYZ (2020)
+B.S. in Computer Science, University of ABC (2018)

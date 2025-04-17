@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Interview Question</title>
+</head>
+<body>
+    <h1>Generated Personalized Interview Question</h1>
+
+    <p><strong>Category:</strong> {{ results['category'] }}</p>
+
+    <p><strong>Retrieved Example Question:</strong><br>
+    {{ results['retrieved_question']['Cleaned_Question'] }}</p>
+
+    <p><strong>Generated Question (for candidate):</strong><br>
+    {{ results['generated_question'] }}</p>
+
+    <h2>Compare Answer</h2>
+    <form action="/compare" method="POST">
+        <label for="user_answer">Your Answer:</label><br>
+        <textarea id="user_answer" name="user_answer" rows="4" cols="50"></textarea><br><br>
+
+        <input type="hidden" name="model_answer" value="{{ results['generated_question'] }}">
+
+        <input type="submit" value="Compare">
+    </form>
+</body>
+</html>
