@@ -3,7 +3,7 @@ import os
 import json
 from werkzeug.utils import secure_filename
 from rag_engine import InterviewQuestionGenerator
-from utils.similarity_checker import compute_similarity
+from utils.similarity_checker import compute_detailed_evaluation
 
 app = Flask(__name__)
 
@@ -46,11 +46,17 @@ def show_results():
     return redirect(url_for('index'))
 
 @app.route('/compare', methods=['POST'])
-def compare_answer():
-    user_answer = request.form['user_answer']
+# def compare_answer():
+#     user_answer = request.form['user_answer']
+#     model_answer = request.form['model_answer']
+#     score = compute_similarity(user_answer, model_answer)
+#     return jsonify({'similarity_score': score})
+def compare_answer(): 
+    user_answer = request.form['user_answer'] 
     model_answer = request.form['model_answer']
-    score = compute_similarity(user_answer, model_answer)
-    return jsonify({'similarity_score': score})
+    evaluation = compute_detailed_evaluation(user_answer, model_answer) 
+    return jsonify(evaluation)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,13 +1,13 @@
 {
-  "category": "DevOps",
+  "category": "AI (Data Science)",
   "retrieved_question": {
-    "ID": 8214,
-    "Category": "DevOps",
-    "Question": "What is the role of a data engineer in a DevOps team?",
-    "Answer": "Answer: A data engineer designs and builds data pipelines, ensuring that data is collected, processed, and made available for analysis, supporting data-driven decision-making in DevOps.",
-    "Difficulty": "Medium",
-    "Cleaned_Question": "role data engineer devops team",
-    "Cleaned_Answer": "answer data engineer design build data pipeline ensuring data collected processed made available analysis supporting datadriven decisionmaking devops"
+    "ID": 1248,
+    "Category": "AI (Data Science)",
+    "Question": "What is the role of a data scientist in developing AI solutions?",
+    "Answer": "Answer: A data scientist develops AI solutions by analyzing data, building predictive models, and applying machine learning techniques to solve business problems and enhance decision-making.",
+    "Difficulty": "Easy",
+    "Cleaned_Question": "role data scientist developing ai solution",
+    "Cleaned_Answer": "answer data scientist develops ai solution analyzing data building predictive model applying machine learning technique solve business problem enhance decisionmaking"
   },
-  "generated_question": "Can you explain how you would approach the design of a scalable and secure data pipeline for a large-scale relational database, taking into consideration the needs of a DevOps team, the use of git and github for version control, and the use of machine learning (ml) techniques for data classification?"
+  "generated_question": "How would you develop an ai solution that analyzes complex datasets to uncover insights, build predictive models, and support data-driven decision-making?"
 }
