@@ -1,0 +1,13 @@
+{
+  "category": "SQL",
+  "retrieved_question": {
+    "ID": 6825,
+    "Category": "SQL",
+    "Question": "What is a data processing pipeline?",
+    "Answer": "Answer: A data processing pipeline is a series of data processing steps, where data is collected, transformed, and delivered to the target destination.",
+    "Difficulty": "Hard",
+    "Cleaned_Question": "data processing pipeline",
+    "Cleaned_Answer": "answer data processing pipeline series data processing step data collected transformed delivered target destination"
+  },
+  "generated_question": "What are the best practices for handling large data volumes in a cloud-native environment?"
+}

@@ -1,0 +1,13 @@
+{
+  "category": "SQL",
+  "retrieved_question": {
+    "ID": 6730,
+    "Category": "SQL",
+    "Question": "What is a data pipeline?",
+    "Answer": "Answer: A data pipeline is a set of processes that move data from one system to another, often involving data transformation and processing along the way.",
+    "Difficulty": "Hard",
+    "Cleaned_Question": "data pipeline",
+    "Cleaned_Answer": "answer data pipeline set process move data one system another often involving data transformation processing along way"
+  },
+  "generated_question": "Describe how you would use SQL to create a data pipeline for real-time data processing."
+}

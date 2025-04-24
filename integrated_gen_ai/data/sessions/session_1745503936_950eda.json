@@ -1,0 +1,28 @@
+{
+  "session_id": "session_1745503936_950eda",
+  "job_description": "Build scalable microservices using Python and cloud-native technologies for real-time data processing.\r\nSkills: Python, FastAPI/Django, REST APIs, Distributed Systems, Docker, Kubernetes, PostgreSQL, AWS",
+  "resume_path": "data/raw\\Priyanka_Kumari_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "Can you explain how you would use SQL to implement a data processing pipeline for a real-time data-driven application?",
+      "user_answer": "use SQL to implement a data preprocessing pipeline for a real time data driven application by first transforming the data from the database extracting it and then loading it again back after the transformation to get the insights",
+      "evaluation": {
+        "relevance": 0.55,
+        "coverage": 0.18,
+        "fluency": 1.0,
+        "overall_score": 0.58
+      },
+      "follow_up": false
+    },
+    {
+      "q_no": 2,
+      "question": "In a data processing pipeline, how can we ensure data consistency between different stages of the pipeline?",
+      "user_answer": "",
+      "evaluation": null,
+      "follow_up": false
+    }
+  ],
+  "current_index": 1,
+  "interview_ended": true
+}

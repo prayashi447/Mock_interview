@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; vertical-align: top; }
+        th { background-color: #f4f4f4; }
+        .section-title { font-size: 24px; margin-bottom: 10px; }
+        .highlight { color: #0066cc; font-weight: bold; }
+        .metric-table { margin-top: 8px; }
+        .metric-table td { border: none; padding: 3px; }
+    </style>
+</head>
+<body>
+    <h1>📋 Interview Summary Report</h1>
+
+    {% if session.questions_asked %}
+        <div class="section-title">Candidate Performance:</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Question</th>
+                    <th>Your Answer</th>
+                    <th>Evaluation</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for q in session.questions_asked %}
+                    <tr>
+                        <td>{{ q.q_no }}</td>
+                        <td>{{ q.question }}</td>
+                        <td>{{ q.user_answer or "Not answered" }}</td>
+                        <td>
+                            {% if q.evaluation %}
+                                ✅ <span class="highlight">Relevance:</span> {{ q.evaluation["relevance"]|default('N/A')|round(2) if q.evaluation["relevance"] is defined else 'N/A' }}<br>
+                                🔍 <span class="highlight">Depth:</span> {{ q.evaluation["depth"]|default('N/A')|round(2) if q.evaluation["depth"] is defined else 'N/A' }}<br>
+                                ⏱ <span class="highlight">Conciseness:</span> {{ q.evaluation["conciseness"]|default('N/A')|round(2) if q.evaluation["conciseness"] is defined else 'N/A' }}
+                            
+                            {% else %}
+                                ❌ Not evaluated
+                            {% endif %}
+                            
+                            {% if q.metrics %}
+                                <div class="metric-table">
+                                    <span class="highlight">📊 Metrics:</span>
+                                    <ul>
+                                        {% for metric, score in q.metrics.items() %}
+                                            <li>{{ metric|capitalize }}: {{ score|round(3) }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No questions were answered during the session.</p>
+    {% endif %}
+</body>
+</html>

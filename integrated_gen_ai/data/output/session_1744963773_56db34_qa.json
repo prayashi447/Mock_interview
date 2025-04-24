@@ -1,0 +1,13 @@
+{
+  "category": "AI (Data Science)",
+  "retrieved_question": {
+    "ID": 1248,
+    "Category": "AI (Data Science)",
+    "Question": "What is the role of a data scientist in developing AI solutions?",
+    "Answer": "Answer: A data scientist develops AI solutions by analyzing data, building predictive models, and applying machine learning techniques to solve business problems and enhance decision-making.",
+    "Difficulty": "Easy",
+    "Cleaned_Question": "role data scientist developing ai solution",
+    "Cleaned_Answer": "answer data scientist develops ai solution analyzing data building predictive model applying machine learning technique solve business problem enhance decisionmaking"
+  },
+  "generated_question": "role data analyst developing ai solution"
+}

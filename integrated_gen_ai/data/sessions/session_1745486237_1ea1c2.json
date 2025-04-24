@@ -1,0 +1,28 @@
+{
+  "session_id": "session_1745486237_1ea1c2",
+  "job_description": "Build scalable microservices using Python and cloud-native technologies for real-time data processing.\r\nSkills: Python, FastAPI/Django, REST APIs, Distributed Systems, Docker, Kubernetes, PostgreSQL, AWS",
+  "resume_path": "data/raw\\Priyanka_Kumari_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "How would you ensure the scalability and reliability of a microservice that processes real-time data?",
+      "user_answer": "I would also design the microservice to be modular, decoupled, and composable, so that different components can be scaled independently or combined depending on the workload.",
+      "evaluation": {
+        "relevance": 0.56,
+        "coverage": 0.0,
+        "fluency": 1.0,
+        "overall_score": 0.52
+      },
+      "follow_up": false
+    },
+    {
+      "q_no": 2,
+      "question": "How would you design a data processing pipeline that can handle large amounts of data from multiple sources and deliver the final results to different destinations?",
+      "user_answer": "",
+      "evaluation": null,
+      "follow_up": false
+    }
+  ],
+  "current_index": 1,
+  "interview_ended": true
+}

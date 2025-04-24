@@ -1,0 +1,20 @@
+{
+  "session_id": "session_1744963773_56db34",
+  "job_description": "Analyzes complex datasets to uncover insights, build predictive models, and support data-driven decision-making. Collaborates with stakeholders to develop strategies using statistical and machine learning techniques.",
+  "resume_path": "data/raw\\Priyanka_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "role data analyst developing ai solution",
+      "user_answer": "roll data analyst developing AI solution",
+      "evaluation": {
+        "relevance": 0.59,
+        "coverage": 0.16,
+        "fluency": 1.0,
+        "overall_score": 0.58
+      },
+      "follow_up": false
+    }
+  ],
+  "current_index": 1
+}

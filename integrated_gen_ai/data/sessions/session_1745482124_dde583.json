@@ -1,0 +1,39 @@
+{
+  "session_id": "session_1745482124_dde583",
+  "job_description": "Description: Build scalable microservices using Python and cloud-native technologies for real-time data processing.\r\nSkills: Python, FastAPI/Django, REST APIs, Distributed Systems, Docker, Kubernetes, PostgreSQL, AWS",
+  "resume_path": "data/raw\\Priyanka_kumari.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "What is a data pipeline?",
+      "user_answer": "data is converted into embedding and stored in a JSON format",
+      "evaluation": {
+        "relevance": 0.1,
+        "coverage": 0.06,
+        "fluency": 1.0,
+        "overall_score": 0.39
+      },
+      "follow_up": false
+    },
+    {
+      "q_no": 2,
+      "question": "How would you use PostgreSQL to integrate real-time data processing in a microservices architecture using Docker and Kubernetes?",
+      "user_answer": "docker is used to create containers",
+      "evaluation": {
+        "relevance": 0.1,
+        "coverage": 0.0,
+        "fluency": 1.0,
+        "overall_score": 0.37
+      },
+      "follow_up": false
+    },
+    {
+      "q_no": 3,
+      "question": "Describe how you would use SQL to create a data pipeline for real-time data processing.",
+      "user_answer": "",
+      "evaluation": null,
+      "follow_up": false
+    }
+  ],
+  "current_index": 2
+}

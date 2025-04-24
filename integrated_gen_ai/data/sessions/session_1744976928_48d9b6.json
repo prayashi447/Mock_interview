@@ -1,0 +1,20 @@
+{
+  "session_id": "session_1744976928_48d9b6",
+  "job_description": "Analyzes complex datasets to uncover insights, build predictive models, and support data-driven decision-making. Collaborates with stakeholders to develop strategies using statistical and machine learning techniques.",
+  "resume_path": "data/raw\\Priyanka_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "How do you optimize the performance of an ai model using [technical term]?",
+      "user_answer": "how do you optimise a performance of an AI model",
+      "evaluation": {
+        "relevance": 0.48,
+        "coverage": 0.08,
+        "fluency": 1.0,
+        "overall_score": 0.52
+      },
+      "follow_up": false
+    }
+  ],
+  "current_index": 1
+}

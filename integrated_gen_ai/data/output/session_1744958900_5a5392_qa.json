@@ -1,0 +1,13 @@
+{
+  "category": "SQL",
+  "retrieved_question": {
+    "ID": 6484,
+    "Category": "SQL",
+    "Question": "What does the term 'data mining' mean?",
+    "Answer": "Answer: Data mining is the process of discovering patterns and knowledge from large amounts of data.",
+    "Difficulty": "Medium",
+    "Cleaned_Question": "term data mining mean",
+    "Cleaned_Answer": "answer data mining process discovering pattern knowledge large amount data"
+  },
+  "generated_question": "What is the SQL query to retrieve all rows from a table named 'customers', where the 'age' column is greater than 30 and the 'gender' column is 'female'?"
+}

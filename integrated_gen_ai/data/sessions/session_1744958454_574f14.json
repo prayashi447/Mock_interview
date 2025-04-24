@@ -1,0 +1,15 @@
+{
+  "session_id": "session_1744958454_574f14",
+  "job_description": "Analyzes complex datasets to uncover insights, build predictive models, and support data-driven decision-making. Collaborates with stakeholders to develop strategies using statistical and machine learning techniques.",
+  "resume_path": "data/raw\\Priyanka_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "What is the SQL query to retrieve all rows from a table called \"products\" where the \"price\" column is greater than 100?",
+      "user_answer": "",
+      "evaluation": null,
+      "follow_up": false
+    }
+  ],
+  "current_index": 0
+}

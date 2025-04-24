@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Interview</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Interview</h1>
+        <div class="question-box">
+            <h3>Question {{ q_no }}</h3>
+            <p>{{ question }}</p>
+        </div>
+
+        <form action="/submit_answer" method="POST">
+            <input type="hidden" name="session_id" value="{{ session_id }}">
+            <label for="user_answer">Your Answer:</label><br>
+            <textarea id="user_answer" name="user_answer" rows="5" cols="60" required></textarea><br><br>
+
+            <!-- Optional speech input -->
+            <button type="button" onclick="startSpeech()">🎤 Speak</button><br><br>
+
+            <input type="submit" value="Submit Answer">
+        </form>
+        <form action="{{ url_for('end_interview') }}" method="POST" style="margin-top: 20px;">
+            <input type="hidden" name="session_id" value="{{ session_id }}">
+            <button type="submit" class="btn btn-danger">End Interview</button>
+        </form>
+        
+    </div>
+
+    <script>
+        function startSpeech() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.interimResults = false;
+            recognition.maxAlternatives = 1;
+
+            recognition.start();
+
+            recognition.onresult = function(event) {
+                const transcript = event.results[0][0].transcript;
+                document.getElementById('user_answer').value = transcript;
+            };
+
+            recognition.onerror = function(event) {
+                alert("Speech recognition error: " + event.error);
+            };
+        }
+    </script>
+</body>
+</html>

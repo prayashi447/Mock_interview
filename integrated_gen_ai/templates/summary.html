@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Interview Summary</h1>
+
+        {% for q in session.questions_asked %}
+            <div class="summary-box">
+                <h3>Question {{ q.q_no }}:</h3>
+                <p><strong>Q:</strong> {{ q.question }}</p>
+                <p><strong>Your Answer:</strong> {{ q.user_answer }}</p>
+
+                <div class="evaluation">
+                    <p><strong>Evaluation:</strong></p>
+                    <ul>
+                        <li>Relevance: {{ q.evaluation.relevance_score }}</li>
+                        <li>Depth: {{ q.evaluation.depth_score }}</li>
+                        <li>Fluency: {{ q.evaluation.fluency_score }}</li>
+                        <li>Remarks: {{ q.evaluation.feedback }}</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+
+        <div class="final-score">
+            {% set total = session.questions_asked | length %}
+            {% set avg_rel = (session.questions_asked | map(attribute='evaluation.relevance_score') | sum) / total %}
+            {% set avg_depth = (session.questions_asked | map(attribute='evaluation.depth_score') | sum) / total %}
+            {% set avg_flu = (session.questions_asked | map(attribute='evaluation.fluency_score') | sum) / total %}
+
+            <h2>Final Scores:</h2>
+            <ul>
+                <li>Average Relevance: {{ avg_rel | round(2) }}</li>
+                <li>Average Depth: {{ avg_depth | round(2) }}</li>
+                <li>Average Fluency: {{ avg_flu | round(2) }}</li>
+            </ul>
+        </div>
+
+        <h3>Interview Summary</h3>
+        <p><strong>Average BLEU:</strong> {{ final_metrics.BLEU }}</p>
+        <p><strong>Average ROUGE:</strong> {{ final_metrics.ROUGE }}</p>
+        <p><strong>Average BERTScore:</strong> {{ final_metrics.BERTScore }}</p>
+
+
+        <br>
+        <a href="/" class="btn">🔁 Start New Interview</a>
+    </div>
+</body>
+</html>

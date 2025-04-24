@@ -1,0 +1,33 @@
+{
+  "session_id": "session_1745505453_ce1ffd",
+  "job_description": "Build scalable microservices using Python and cloud-native technologies for real-time data processing.\r\nSkills: Python, FastAPI/Django, REST APIs, Distributed Systems, Docker, Kubernetes, PostgreSQL, AWS",
+  "resume_path": "data/raw\\Priyanka_Kumari_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "What is the most efficient way to handle data replication and synchronization in a distributed SQL system?",
+      "user_answer": "One possible answer is to use a consistent hashing algorithm to distribute the data across multiple servers, and a conflict resolution mechanism to handle data inconsistencies and updates. Alternatively, you can use a distributed transaction management system, such as Paxos or Raft, to coordinate data modifications and ensure atomicity and durability.",
+      "evaluation": {
+        "relevance": 0.51,
+        "coverage": 0.27,
+        "fluency": 1.0,
+        "overall_score": 0.6
+      },
+      "follow_up": false,
+      "metrics": {
+        "BLEU": 0.0,
+        "ROUGE": 0.0938,
+        "BERTScore": 0.8404
+      }
+    },
+    {
+      "q_no": 2,
+      "question": "What are the best practices for handling large data volumes in a cloud-native environment?",
+      "user_answer": "",
+      "evaluation": null,
+      "follow_up": false
+    }
+  ],
+  "current_index": 1,
+  "interview_ended": true
+}

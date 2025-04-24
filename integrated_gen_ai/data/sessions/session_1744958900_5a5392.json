@@ -1,0 +1,20 @@
+{
+  "session_id": "session_1744958900_5a5392",
+  "job_description": "Analyzes complex datasets to uncover insights, build predictive models, and support data-driven decision-making. Collaborates with stakeholders to develop strategies using statistical and machine learning techniques.",
+  "resume_path": "data/raw\\Priyanka_Resume.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "What is the SQL query to retrieve all rows from a table named 'customers', where the 'age' column is greater than 30 and the 'gender' column is 'female'?",
+      "user_answer": "SQL Query to retrieve all the rows from a Table named customers where the age column is greater than 30 and gender column is female",
+      "evaluation": {
+        "relevance": 0.36,
+        "coverage": 0.43,
+        "fluency": 0.9,
+        "overall_score": 0.56
+      },
+      "follow_up": false
+    }
+  ],
+  "current_index": 1
+}

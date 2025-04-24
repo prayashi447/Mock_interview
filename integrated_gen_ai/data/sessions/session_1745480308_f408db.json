@@ -1,0 +1,20 @@
+{
+  "session_id": "session_1745480308_f408db",
+  "job_description": "Description: Build scalable microservices using Python and cloud-native technologies for real-time data processing.\r\nSkills: Python, FastAPI/Django, REST APIs, Distributed Systems, Docker, Kubernetes, PostgreSQL, AWS",
+  "resume_path": "data/raw\\Priyanka_kumari.pdf",
+  "questions_asked": [
+    {
+      "q_no": 1,
+      "question": "How would you design a data pipeline that can process large volumes of real-time data from multiple sources and store the results in a structured format using SQL?",
+      "user_answer": "One possible approach is to use the Apache Kafka streaming platform to collect and aggregate the data from various sources, such as sensors, web applications, or cloud services. Finally, use the Apache Spark SQL toolkit to write the results to a SQL database, such as PostgreSQL, and handle the data integrity, security, and scalability issues.",
+      "evaluation": {
+        "relevance": 0.36,
+        "coverage": 0.09,
+        "fluency": 1.0,
+        "overall_score": 0.48
+      },
+      "follow_up": false
+    }
+  ],
+  "current_index": 1
+}
